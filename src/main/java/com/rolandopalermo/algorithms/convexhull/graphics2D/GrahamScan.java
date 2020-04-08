@@ -33,9 +33,9 @@ public class GrahamScan implements ConvexHull<Point2D> {
         int index = 3;
 
         while (index < points.length) {
-            Point2D pop = verticesList.pop();
-            if (getTurn(verticesList.peek(), pop, points[index]) == Turn.COUNTER_CLOCKWISE) {
-                verticesList.push(pop);
+            Point2D tmp = verticesList.pop();
+            if (getTurn(verticesList.peek(), tmp, points[index]) == Turn.COUNTER_CLOCKWISE) {
+                verticesList.push(tmp);
                 verticesList.push(points[index]);
                 index++;
             }
