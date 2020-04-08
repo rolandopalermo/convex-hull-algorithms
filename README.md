@@ -3,10 +3,23 @@
 ## 2-D
 
 ### Gift Wrapping
-![paso_01](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/01.jpg)
-![paso_02](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/02.jpg)
-![paso_03](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/03.jpg)
-![paso_04](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/04.jpg)
-![paso_05](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/05.jpg)
-![paso_06](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/06.jpg)
-![paso_07](https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/07.jpg)
+
+<table>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/01.jpg" alt="drawing" width="300"/></td>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/02.jpg" alt="drawing" width="300"/></td>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/03.jpg" alt="drawing" width="300"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/04.jpg" alt="drawing" width="300"/></td>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/05.jpg" alt="drawing" width="300"/></td>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/06.jpg" alt="drawing" width="300"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/07.jpg" alt="drawing" width="300"/></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
