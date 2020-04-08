@@ -1,0 +1,218 @@
+\documentclass{report}[a4paper, 12pt]
+
+\usepackage[left=0mm, top=0mm, bottom=0mm, right=0mm, margin=0mm]{geometry}
+\usepackage{amsthm,tikz,subcaption}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{quotes,angles}
+
+\begin{document}
+
+    \begin{table}
+
+        \begin{tabular}{ccc}
+
+            % Step 1
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1.5pt,minimum size=3pt] at \Point {};
+                }
+                \draw [dotted, gray] (0,0) grid (6,6);
+            \end{tikzpicture}
+
+            &
+
+            % Step 2
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \coordinate (a) at (5,1);
+                \coordinate (b) at (2,1);
+                \coordinate (c) at (5,2);
+
+                \pic [draw, ->, "$\alpha$",draw=orange, angle eccentricity=1.5,angle radius=1cm,line width=0.5mm] {angle=a--b--c};
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+                \draw [line width=0.5mm, blue, domain=2:6, samples=100] plot(\x, {((1)});
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (5,5), (2,5)}{
+                \draw[-{Latex[length=2mm]},line width=0.1mm,gray] (2, 1) -- \Point node[right]{};
+                }
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$p$}] at (2,1) {};
+                %\node[circle,inner sep=1.5pt,fill=red,label=left:{$q$}] at (5,2) {};
+
+            \end{tikzpicture}
+
+            &
+
+            % Step 3
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \coordinate (a) at (6,2.34);
+                \coordinate (b) at (5,2);
+                \coordinate (c) at (5,5);
+
+                \pic [draw, ->, "$\alpha$",draw=orange, angle eccentricity=1.5,angle radius=0.4cm,line width=0.5mm] {angle=a--b--c};
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+                \draw [line width=0.5mm, blue, domain=2:6, samples=100] plot(\x, {(((\x+1)/3)});
+
+                \foreach \Point in {(3,4), (4,4), (2,1), (5,5), (2,5)}{
+                \draw[-{Latex[length=2mm]},line width=0.1mm,gray] (5, 2) -- \Point node[right]{};
+                }
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$p$}] at (2,1) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$q$}] at (5,2) {};
+
+            \end{tikzpicture}
+
+            \\
+
+            % Step 4
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \coordinate (a) at (5,6);
+                \coordinate (b) at (5,5);
+                \coordinate (c) at (2,5);
+
+                \pic [draw, ->, "$\alpha$",draw=orange, angle eccentricity=1.5,angle radius=0.4cm,line width=0.5mm] {angle=a--b--c};
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+
+                \draw [line width=0.5mm, blue, domain=2:6, samples=100] plot(\x, {(((\x+1)/3)});
+                \draw [line width=0.5mm, draw=blue] (5,2) -- (5,6);
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (2,5)}{
+                \draw[-{Latex[length=2mm]},line width=0.1mm,gray] (5, 5) -- \Point node[right]{};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,1) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$p$}] at (5,2) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$q$}] at (5,5) {};
+
+            \end{tikzpicture}
+
+            &
+
+            % Step 5
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \coordinate (a) at (0,5);
+                \coordinate (b) at (2,5);
+                \coordinate (c) at (2,1);
+
+                \pic [draw, ->, "$\alpha$",draw=orange, angle eccentricity=1.5,angle radius=0.4cm,line width=0.5mm] {angle=a--b--c};
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+
+                \draw [line width=0.5mm, blue, domain=2:6, samples=100] plot(\x, {(((\x+1)/3)});
+                \draw [line width=0.5mm, draw=blue] (5,2) -- (5,6);
+                \draw [line width=0.5mm, draw=blue] (5,5) -- (0,5);
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5)}{
+                \draw[-{Latex[length=2mm]},line width=0.1mm,gray] (2, 5) -- \Point node[right]{};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,1) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (5,2) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$p$}] at (5,5) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{$q$}] at (2,5) {};
+
+            \end{tikzpicture}
+
+            &
+            % Step 6
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+
+                \draw [line width=0.5mm, blue, domain=2:6, samples=100] plot(\x, {(((\x+1)/3)});
+                \draw [line width=0.5mm, draw=blue] (5,2) -- (5,6);
+                \draw [line width=0.5mm, draw=blue] (5,5) -- (0,5);
+                \draw [line width=0.5mm, draw=blue] (2,5) -- (2,0);
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,1) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (5,2) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (5,5) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,5) {};
+
+            \end{tikzpicture}
+
+            \\
+
+            % Step 7
+            \begin{tikzpicture}
+                \draw[-latex, dotted, draw=gray] (0,0)--(6,0) node [right] {$x$};
+                \draw[-latex, dotted, draw=gray] (0,0)--(0,6) node [above] {$y$};
+
+                \node (v1) at (2,1) {};
+                \node (v2) at (5,2) {};
+                \node (v3) at (5,5) {};
+                \node (v4) at (2,5) {};
+                \draw[opacity=0.5,fill=pink] (v1.center)--(v2.center)--(v3.center)--(v4.center)--(v1.center);
+
+                \draw [dotted, gray] (0,0) grid (6,6);
+                \node [red] at (2,1) {\textbullet};
+
+                \foreach \Point in {(3,4), (5,2), (4,4), (2,1), (5,5), (2,5)}{
+                \node[circle,fill=black!60!green,inner sep=1pt,minimum size=3pt] at \Point {};
+                }
+
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,1) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (5,2) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (5,5) {};
+                \node[circle,inner sep=1.5pt,fill=red,label=left:{}] at (2,5) {};
+
+            \end{tikzpicture}
+
+            &
+
+            \begin{tikzpicture}
+            \end{tikzpicture}
+
+            &
+
+            \begin{tikzpicture}
+            \end{tikzpicture}
+
+        \end{tabular}
+
+    \end{table}
+
+\end{document}
