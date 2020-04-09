@@ -3,41 +3,15 @@
 ## 2-D
 
 ### Gift Wrapping
-
-<table>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/01.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/02.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/03.jpg" alt="drawing" width="300"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/04.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/05.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/06.jpg" alt="drawing" width="300"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/gift_wrapping/07.jpg" alt="drawing" width="300"/></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+<object data="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/gift_wrapping/gift_wrapping.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/gift_wrapping/gift_wrapping.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/gift_wrapping/gift_wrapping.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 ### Graham Scan
-
-<table>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/01.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/02.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/03.jpg" alt="drawing" width="300"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/04.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/05.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/06.jpg" alt="drawing" width="300"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/07.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/08.jpg" alt="drawing" width="300"/></td>
-        <td><img src="https://raw.githubusercontent.com/rolandopalermo/convex-hull-algorithms/master/doc/2d/graham_scan/09.jpg" alt="drawing" width="300"/></td>            
-    </tr>
-</table>
+<object data="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/graham_scan/graham_scan.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/graham_scan/graham_scan.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/rolandopalermo/convex-hull-algorithms/blob/master/doc/2d/graham_scan/graham_scan.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
